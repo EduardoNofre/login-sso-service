@@ -1,41 +1,16 @@
 package br.com.gestao.usuarios.app.service;
 
-import java.util.List;
-
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.security.oauth2.jwt.Jwt;
 // import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.stereotype.Service;
 
 import br.com.gestao.usuarios.app.dto.SingleSignOnOAuth2DTO;
-import br.com.gestao.usuarios.app.dto.UsuarioDTO;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @Service
 public class UsuarioService {
-
-	public UsuarioDTO loginUsuario() {
-
-		return null;
-	}
-
-	public void logoutUsuario() {
-
-	}
-
-	public List<UsuarioDTO> buscarUsuario() {
-
-		return null;
-	}
-
-	public UsuarioDTO incluirUsuario() {
-
-		return null;
-	}
-
-	public void excluirUsuario() {
-	}
 
 	public SingleSignOnOAuth2DTO cookie(OidcUser oidcUser) {
 

@@ -6,9 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.core.oidc.user.OidcUser;
 import org.springframework.security.oauth2.jwt.Jwt;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,41 +23,6 @@ public class UsuarioController {
 
 	@Autowired
 	private UsuarioService usuarioService;
-
-	@GetMapping("/login")
-	@Operation(summary = "LOGIN", description = "Login usuario na base de dados")
-	public ResponseEntity<Void> loginUsuario() {
-
-		return ResponseEntity.ok().build();
-	}
-
-	@Operation(summary = "LOGOUT", description = "Logout do usuario")
-	@GetMapping("/logout")
-	public ResponseEntity<Void> logoutUsuario() {
-
-		return ResponseEntity.ok().build();
-	}
-
-	@Operation(summary = "BUSCAR", description = "Buscar usuario")
-	@GetMapping("/buscar")
-	public ResponseEntity<Void> buscarUsuario() {
-
-		return ResponseEntity.ok().build();
-	}
-
-	@Operation(summary = "INCLUIR", description = "Incluir usuario")
-	@PostMapping("/incluir")
-	public ResponseEntity<Void> incluirUsuario() {
-
-		return ResponseEntity.ok().build();
-	}
-
-	@Operation(summary = "EXCLUIR", description = "Excluir usuario")
-	@DeleteMapping("/excluir")
-	public ResponseEntity<Void> excluirUsuario() {
-
-		return ResponseEntity.ok().build();
-	}
 
 	@Operation(summary = "COOKIE", description = "Cria o Cookie")
 	@GetMapping("/cookie")
